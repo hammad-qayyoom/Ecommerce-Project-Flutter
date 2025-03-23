@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:greenage_ecomm/screens/auth-ui/sign-up-screen.dart';
 import 'package:greenage_ecomm/screens/auth-ui/splash-screen.dart';
 import 'package:greenage_ecomm/screens/user-panel/main-screen.dart';
-
 import 'screens/auth-ui/sign-in-screen.dart';
 import 'screens/auth-ui/welcome-screen.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -31,12 +31,15 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/',
       getPages: [
-        GetPage(name: '/', page: () => const SignUpScreen()),
+        GetPage(name: '/', page: () =>  SplashScreen()),
+        GetPage(name: '/SignInScreen', page: () => const SignUpScreen()),
+
         GetPage(name: '/SignInScreen', page: () => const SignInScreen()),
-        GetPage(name: '/SplashScreen', page: () => const SplashScreen()),
-        GetPage(name: '/WelcomeScreen', page: () => const WelcomeScreen()),
-        GetPage(name: '/MainScreen', page: () => const MainScreen()), // Ensure this route is registered
+       //  GetPage(name: '/SplashScreen', page: () => const SplashScreen()),
+        GetPage(name: '/WelcomeScreen', page: () =>  WelcomeScreen()),
+        GetPage(name: '/MainScreen', page: () => const MainScreen()),
       ],
+      builder: EasyLoading.init(),
     );
   }
 }

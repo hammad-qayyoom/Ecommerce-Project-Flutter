@@ -27,8 +27,8 @@ android {
         applicationId = "com.greenage.greenage_ecomm"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
-        minSdkVersion 23  // Change this value if it's lower
-        targetSdkVersion 33  // You can keep this or update if needed
+        minSdk = flutter.minSdkVersion
+        targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
         multiDexEnabled true
