@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "890291890968",
+    "project_id": "greenage-941bc",
+    "storage_bucket": "greenage-941bc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:890291890968:android:9976dd711439ae133c8c6d",
+        "android_client_info": {
+          "package_name": "com.greenage.greenage_ecomm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEl_mffaaTYwbtxsbNSyTO5MB1qt_56-o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
