@@ -70,7 +70,7 @@ class WelcomeScreen extends StatelessWidget {
               ),
               child: TextButton.icon(
                 onPressed: () {
-                  Get.to(()=>SignInScreen());
+                  Get.offAll(()=>SignInScreen());
                 },
                 icon: const Icon(
                   Icons.email,
