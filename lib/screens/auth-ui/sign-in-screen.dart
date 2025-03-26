@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_keyboard_visibility/flutter_keyboard_visibility.dart';
 import 'package:get/get.dart';
 import 'package:greenage_ecomm/controllers/sign-in-controller.dart';
+import 'package:greenage_ecomm/screens/auth-ui/forget-password-screen.dart';
 import 'package:lottie/lottie.dart';
 import '../../utils/app-constant.dart';
 import '../user-panel/main-screen.dart';
@@ -111,11 +112,16 @@ class _SignInScreenState extends State<SignInScreen> {
                   Container(
                     margin: EdgeInsets.symmetric(horizontal: 11.0),
                     alignment: Alignment.centerRight,
-                    child: Text(
-                      "Forgot Password?",
-                      style: TextStyle(
-                        color: AppConstant.appSecondaryColor,
-                        fontWeight: FontWeight.bold,
+                    child: GestureDetector(
+                      onTap: () {
+                        Get.to(() => ForgetPasswordScreen());
+                      },
+                      child: Text(
+                        "Forgot Password?",
+                        style: TextStyle(
+                          color: AppConstant.appSecondaryColor,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
                   ),
